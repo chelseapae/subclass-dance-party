@@ -7,6 +7,7 @@ var BlinkyDancer = function(top, left, timeBetweenSteps) {
   // this.$node;
   // //this.step.call(this);
   // var oldStep = this.step;
+  //console.log(top, left, timeBetweenSteps);
   Dancer.call(this, top, left, timeBetweenSteps);
   this.step();
 };
