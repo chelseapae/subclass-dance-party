@@ -25,14 +25,13 @@ Dancer.prototype.step = function() {
 Dancer.prototype.setPosition = function(top, left) {
   // Use css top and left properties to position our <span> tag
   // where it belongs on the page. See http://api.jquery.com/css/
-  //
-  console.log('position from Dancer', top, left);
 
   var styleSettings = {
     top: top,
     left: left
   };
   this.$node.css(styleSettings);
+  //this.$node.css('border', '10px solid blue');
 };
 
 // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote

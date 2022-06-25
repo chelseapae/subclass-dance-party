@@ -28,8 +28,9 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     //console.log($('body').width() * Math.random());
+    window.dancers.push(dancer.$node);
     $('body').append(dancer.$node);
-    console.log(dancer);
   });
 
+  console.log(window.dancers);
 });

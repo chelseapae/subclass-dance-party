@@ -10,6 +10,7 @@ var BlinkyDancer = function(top, left, timeBetweenSteps) {
   //console.log(top, left, timeBetweenSteps);
   Dancer.call(this, top, left, timeBetweenSteps);
   this.step();
+  this.$node.css('border', '10px solid pink');
 };
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
