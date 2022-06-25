@@ -20,16 +20,13 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .changePositionButton{
   padding:5px 12px;
-  float:right;
+  float:left;
 }
-.topbar{
-  height:32px;
-  background-color: #555;
-}
+
 .title{
-  background-color: #777;
+  background-color: transparent;
 }
 .dancer{
   border:10px solid red;
@@ -43,4 +40,10 @@ body, a:link, a:visited, a:active{
 .carlton{
   border: 10px solid blue;
   border-radius:0px;
+}
+button {
+  padding: 15px 25px;
+  color: #eee;
+  border: 1px black solid;
+  background-color: transparent;
 }
