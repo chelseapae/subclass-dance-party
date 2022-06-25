@@ -28,9 +28,27 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     //console.log($('body').width() * Math.random());
-    window.dancers.push(dancer.$node);
     $('body').append(dancer.$node);
   });
+});
 
-  console.log(window.dancers);
+$('.changePositionButton').on('click', function(event) {
+  var changePositionFunctionName = $(this).data('change-position-function-name');
+
+  var changePositionFunction = window[changePositionFunctionName];
+  // console.log('test', window);
+  // console.log(Array.isArray(document.getElementsByClassName('dancer')));
+  var dancerPosition = document.getElementsByClassName('dancer');
+  for (var i = 0; i < dancerPosition.length; i++) {
+    // this.$node.css('position', '0px');
+    console.log(dancerPosition.item(i));
+    dancerPosition.item(i).style.top = '355px';
+  }
+  var positions = new changePositionFunction(
+    $('body').height(),
+    $('body').width() * Math.random(),
+    Math.random() * 1000
+  );
+  $('body').append(positions.$node);
+
 });

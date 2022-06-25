@@ -24,10 +24,13 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+  margin:15px;
+
 }
 .hulk{
   border: 40px solid green;
   border-radius:40px;
+  margin:15px;
 }
 .carlton{
   border: 10px solid blue;
