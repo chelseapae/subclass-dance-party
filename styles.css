@@ -6,6 +6,17 @@ body{
   background-color:#444;
   font-size: 18px;
 }
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
@@ -24,13 +35,10 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
-  margin:15px;
-
 }
 .hulk{
   border: 40px solid green;
   border-radius:40px;
-  margin:15px;
 }
 .carlton{
   border: 10px solid blue;
