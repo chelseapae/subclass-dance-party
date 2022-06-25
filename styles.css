@@ -37,7 +37,7 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .hulk{
-  border: 40px solid green;
+  border: 40px solid rgb(207, 203, 162);
   border-radius:40px;
 }
 .carlton{

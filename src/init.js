@@ -52,3 +52,7 @@ $('.changePositionButton').on('click', function(event) {
   $('body').append(positions.$node);
 
 });
+
+$('body').on('mouseover', '.hulk', function(event) {
+  $('.hulk').css({'border': '80px solid green'});
+});

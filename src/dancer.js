@@ -48,7 +48,7 @@ Dancer.prototype.setPosition = function(top, left) {
   var dancerPosition = document.getElementsByClassName('dancer');
   var tooClose = false;
   for (var i = 0; i < dancerPosition.length; i++) {
-    // this.$node.css('position', '0px');
+    this.$node.css('position', '0px');
     var dancingTop = dancerPosition.item(i).style.top;
     var dancingLeft = dancerPosition.item(i).style.left;
     dancingTop = dancingTop.slice(0, -2);
@@ -59,7 +59,7 @@ Dancer.prototype.setPosition = function(top, left) {
     var bsquare = Math.abs(dancingLeft - left);
     var distanceBetween = Math.sqrt((asquare * asquare) + (bsquare * bsquare));
     console.log(asquare, bsquare, distanceBetween);
-    if (distanceBetween < 65) {
+    if (distanceBetween < 125) {
       tooClose = true;
     }
   }
@@ -74,7 +74,7 @@ Dancer.prototype.setPosition = function(top, left) {
 
   this.$node.css(styleSettings);
   //this.$node.css('border', '10px solid blue');
-}
+};
 
 // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
 // this one sets the position to some random default point within the body
