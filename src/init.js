@@ -41,7 +41,7 @@ $('.changePositionButton').on('click', function(event) {
   var dancerPosition = document.getElementsByClassName('dancer');
   for (var i = 0; i < dancerPosition.length; i++) {
     // this.$node.css('position', '0px');
-    console.log(dancerPosition.item(i));
+    //console.log(dancerPosition.item(i));
     dancerPosition.item(i).style.top = '355px';
   }
   var positions = new changePositionFunction(
