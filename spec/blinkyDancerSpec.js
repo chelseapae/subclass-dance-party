@@ -19,6 +19,12 @@ describe('blinkyDancer', function() {
     expect(blinkyDancer.$node.toggle.called).to.be.true;
   });
 
+  it('should have a node css name function', function() {
+    sinon.spy(blinkyDancer.$node, 'css');
+    blinkyDancer.step();
+    expect(typeof blinkyDancer.$node.css.name).to.be.string;
+  });
+
   describe('dance', function() {
     it('should call step at least once per second', function() {
       sinon.spy(blinkyDancer, 'step');
@@ -32,3 +38,5 @@ describe('blinkyDancer', function() {
     });
   });
 });
+
+

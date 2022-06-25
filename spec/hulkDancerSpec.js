@@ -18,6 +18,12 @@ describe('hulkDancer', function() {
     expect(hulkDancer.$node.toggle.called).to.be.true;
   });
 
+  it('should have a mouseover function that changes appearance', function() {
+    sinon.spy(hulkDancer.$node, 'mouseover');
+    hulkDancer.step();
+    expect(typeof hulkDancer.$node['mouseover']).to.be.equal('function');
+  });
+
   describe('dance', function() {
     it('should call step at least once per second', function() {
       sinon.spy(hulkDancer, 'step');
